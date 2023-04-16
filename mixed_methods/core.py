@@ -40,9 +40,9 @@ class MixedMethod(Generic[T, P, R, Q, S]):
         self, instance: Optional[T], type: Optional[Type[T]] = None
     ) -> Union[Callable[P, R], Callable[Q, S]]:
         if instance is None:
-            return self.type_method.__get__(instance, type)
+            return self.type_method.__get__(instance, type)  # type: ignore
 
-        return self.instance_method.__get__(instance, type)
+        return self.instance_method.__get__(instance, type)  # type: ignore
 
 
 def mixed_method(

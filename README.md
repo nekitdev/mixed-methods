@@ -74,10 +74,10 @@ class Type:
 
 ```python
 >>> from main import Type
->>> Type.test()
+>>> Type.method()
 13
 >>> instance = Type()
->>> instance.test()
+>>> instance.method()
 42
 ```
 
