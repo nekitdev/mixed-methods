@@ -533,8 +533,7 @@
 
         <details class="quote">
           <summary>Source code in <code>mix_descriptors/core.py</code></summary>
-          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">30</span>
-<span class="normal">31</span>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">31</span>
 <span class="normal">32</span>
 <span class="normal">33</span>
 <span class="normal">34</span>
@@ -557,7 +556,8 @@
 <span class="normal">51</span>
 <span class="normal">52</span>
 <span class="normal">53</span>
-<span class="normal">54</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@final</span>
+<span class="normal">54</span>
+<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@final</span>
 <span class="nd">@frozen</span><span class="p">()</span>
 <span class="k">class</span> <span class="nc">MixDescriptors</span><span class="p">(</span><span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">R</span><span class="p">],</span> <span class="n">Generic</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents types that mix descriptors.&quot;&quot;&quot;</span>
@@ -716,8 +716,7 @@
 
       <details class="quote">
         <summary>Source code in <code>mix_descriptors/core.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">57</span>
-<span class="normal">58</span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">58</span>
 <span class="normal">59</span>
 <span class="normal">60</span>
 <span class="normal">61</span>
@@ -728,7 +727,8 @@
 <span class="normal">66</span>
 <span class="normal">67</span>
 <span class="normal">68</span>
-<span class="normal">69</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">mix_descriptors</span><span class="p">(</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">mix_descriptors</span><span class="p">(</span>
     <span class="n">type_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">],</span> <span class="n">instance_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MixDescriptors</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Mixes descriptors.</span>
