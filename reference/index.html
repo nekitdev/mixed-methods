@@ -303,6 +303,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mix_descriptors.MixDescriptors" class="md-nav__link">
+    MixDescriptors
+  </a>
+  
+    <nav class="md-nav" aria-label="MixDescriptors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mix_descriptors.core.MixDescriptors.type_descriptor" class="md-nav__link">
+    type_descriptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mix_descriptors.core.MixDescriptors.instance_descriptor" class="md-nav__link">
+    instance_descriptor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mix_descriptors.mix_descriptors" class="md-nav__link">
+    mix_descriptors()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -404,6 +438,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mix_descriptors.MixDescriptors" class="md-nav__link">
+    MixDescriptors
+  </a>
+  
+    <nav class="md-nav" aria-label="MixDescriptors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mix_descriptors.core.MixDescriptors.type_descriptor" class="md-nav__link">
+    type_descriptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mix_descriptors.core.MixDescriptors.instance_descriptor" class="md-nav__link">
+    instance_descriptor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mix_descriptors.mix_descriptors" class="md-nav__link">
+    mix_descriptors()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -444,6 +512,240 @@
 
 
 
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="mix_descriptors.MixDescriptors" class="doc doc-heading">
+        <code>MixDescriptors</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><span title="mix_descriptors.core.Descriptor">Descriptor</span>[<span title="mix_descriptors.core.T">T</span>, <span title="mix_descriptors.core.P">P</span>, <span title="mix_descriptors.core.R">R</span>]</code>, <code><a class="autorefs autorefs-external" title="typing.Generic" href="https://docs.python.org/3/library/typing.html#typing.Generic">Generic</a>[<span title="mix_descriptors.core.T">T</span>, <span title="mix_descriptors.core.P">P</span>, <span title="mix_descriptors.core.Q">Q</span>, <span title="mix_descriptors.core.R">R</span>, <span title="mix_descriptors.core.S">S</span>]</code></p>
+
+  
+      <p>Represents types that mix descriptors.</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>mix_descriptors/core.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@final</span>
+<span class="nd">@frozen</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">MixDescriptors</span><span class="p">(</span><span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">R</span><span class="p">],</span> <span class="n">Generic</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents types that mix descriptors.&quot;&quot;&quot;</span>
+
+    <span class="n">type_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">]</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;The descriptor to use for types.&quot;&quot;&quot;</span>
+    <span class="n">instance_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;The descriptor to use for instances.&quot;&quot;&quot;</span>
+
+    <span class="nd">@overload</span>
+    <span class="k">def</span> <span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">P</span><span class="p">:</span>
+        <span class="o">...</span>
+
+    <span class="nd">@overload</span>
+    <span class="k">def</span> <span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">:</span> <span class="n">T</span><span class="p">,</span> <span class="nb">type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">R</span><span class="p">:</span>
+        <span class="o">...</span>
+
+    <span class="k">def</span> <span class="fm">__get__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">],</span> <span class="nb">type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">P</span><span class="p">,</span> <span class="n">R</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">instance</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_method</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_method</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="mix_descriptors.core.MixDescriptors.type_descriptor" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">type_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>The descriptor to use for types.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="mix_descriptors.core.MixDescriptors.instance_descriptor" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">instance_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>The descriptor to use for instances.</p>
+  </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="mix_descriptors.mix_descriptors" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">mix_descriptors</span><span class="p">(</span><span class="n">type_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">],</span> <span class="n">instance_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">MixDescriptors</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Mixes descriptors.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>type_descriptor</code></td>
+          <td>
+                <code><span title="mix_descriptors.core.Descriptor">Descriptor</span>[<span title="mix_descriptors.core.T">T</span>, <span title="mix_descriptors.core.P">P</span>, <span title="mix_descriptors.core.Q">Q</span>]</code>
+          </td>
+          <td><p>The descriptor to use for types.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>instance_descriptor</code></td>
+          <td>
+                <code><span title="mix_descriptors.core.Descriptor">Descriptor</span>[<span title="mix_descriptors.core.T">T</span>, <span title="mix_descriptors.core.R">R</span>, <span title="mix_descriptors.core.S">S</span>]</code>
+          </td>
+          <td><p>The descriptor to use for instances.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="mix_descriptors.core.MixDescriptors" href="#mix_descriptors.MixDescriptors">MixDescriptors</a>[<span title="mix_descriptors.core.T">T</span>, <span title="mix_descriptors.core.P">P</span>, <span title="mix_descriptors.core.Q">Q</span>, <span title="mix_descriptors.core.R">R</span>, <span title="mix_descriptors.core.S">S</span>]</code>
+          </td>
+          <td><p>The created <a class="autorefs autorefs-internal" href="#mix_descriptors.MixDescriptors"><code>MixDescriptors[T, P, Q, R, S]</code></a> instance.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>mix_descriptors/core.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">mix_descriptors</span><span class="p">(</span>
+    <span class="n">type_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">],</span> <span class="n">instance_descriptor</span><span class="p">:</span> <span class="n">Descriptor</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MixDescriptors</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">S</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Mixes descriptors.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        type_descriptor: The descriptor to use for types.</span>
+<span class="sd">        instance_descriptor: The descriptor to use for instances.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        The created [`MixDescriptors[T, P, Q, R, S]`][mix_descriptors.core.MixDescriptors] instance.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">MixDescriptors</span><span class="p">(</span><span class="n">type_descriptor</span><span class="p">,</span> <span class="n">instance_descriptor</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
 
 
 
