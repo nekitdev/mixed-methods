@@ -1,9 +1,9 @@
-site_name: mixed-methods
+site_name: mix-descriptors
 site_author: nekitdev
-site_description: Mixed methods.
+site_description: Mixing descriptors.
 
-repo_name: nekitdev/mixed-methods
-repo_url: https://github.com/nekitdev/mixed-methods
+repo_name: nekitdev/mix-descriptors
+repo_url: https://github.com/nekitdev/mix-descriptors
 
 remote_branch: github-pages
 
@@ -17,7 +17,7 @@ nav:
 
 watch:
   - docs
-  - mixed_methods
+  - mix_descriptors
 
 theme:
   name: material
@@ -52,7 +52,7 @@ plugins:
             members_order: source
             show_signature_annotations: true
 
-          paths: [mixed_methods]
+          paths: [mix_descriptors]
 
           import:
             - https://docs.python.org/3/objects.inv

@@ -1,4 +1,4 @@
-from mixed_methods import mixed_method
+from mix_descriptors import mix_descriptors
 
 TYPE = 13
 INSTANCE = 42
@@ -12,7 +12,7 @@ class Type:
     def instance_method(self) -> int:
         return INSTANCE
 
-    method = mixed_method(type_method, instance_method)
+    method = mix_descriptors(type_method, instance_method)
 
 
 def test_mixed_method() -> None:

@@ -1,3 +1,3 @@
 # Reference
 
-::: mixed_methods
+::: mix_descriptors

@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "mixed-methods"
+name = "mix-descriptors"
 version = "1.0.0"
-description = "Mixed methods."
+description = "Mixing descriptors."
 authors = ["nekitdev"]
 license = "MIT"
 
 readme = "README.md"
 
-homepage = "https://github.com/nekitdev/mixed-methods"
-repository = "https://github.com/nekitdev/mixed-methods"
-documentation = "https://nekitdev.github.io/mixed-methods"
+homepage = "https://github.com/nekitdev/mix-descriptors"
+repository = "https://github.com/nekitdev/mix-descriptors"
+documentation = "https://nekitdev.github.io/mix-descriptors"
 
-keywords = ["python", "mixed", "method"]
+keywords = ["python", "mix", "descriptor"]
 
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -24,20 +24,25 @@ classifiers = [
 [tool.poetry.urls]
 Discord = "https://nekit.dev/discord"
 Funding = "https://patreon.com/nekitdev"
-Issues = "https://github.com/nekitdev/mixed-methods/issues"
+Issues = "https://github.com/nekitdev/mix-descriptors/issues"
 
 [[tool.poetry.packages]]
-include = "mixed_methods"
+include = "mix_descriptors"
 
 [tool.poetry.dependencies]
 python = ">= 3.7"
-attrs = ">= 22.2.0"
+attrs = ">= 23.1.0"
 
 [tool.poetry.group.format]
 optional = true
 
 [tool.poetry.group.format.dependencies]
 black = "23.3.0"
+flake8-pyproject = "1.2.3"
+
+[tool.poetry.group.format.dependencies.flake8]
+version = "6.0.0"
+python = ">= 3.8.1"
 
 [tool.poetry.group.format.dependencies.isort]
 version = "5.12.0"
@@ -47,7 +52,7 @@ python = ">= 3.8"
 optional = true
 
 [tool.poetry.group.check.dependencies]
-mypy = "1.2.0"
+mypy = "1.3.0"
 
 [tool.poetry.group.test]
 optional = true
@@ -55,14 +60,13 @@ optional = true
 [tool.poetry.group.test.dependencies]
 pytest = "7.3.1"
 pytest-cov = "4.0.0"
-typing-extensions = "4.5.0"
 
 [tool.poetry.group.docs]
 optional = true
 
 [tool.poetry.group.docs.dependencies]
-mkdocs = "1.4.2"
-mkdocs-material = "9.1.6"
+mkdocs = "1.4.3"
+mkdocs-material = "9.1.11"
 
 [tool.poetry.group.docs.dependencies.mkdocstrings]
 version = "0.21.2"
@@ -79,11 +83,11 @@ line_length = 100
 profile = "black"
 
 [tool.pytest.ini_options]
-addopts = "--cov mixed_methods"
+addopts = "--cov mix_descriptors"
 testpaths = ["tests"]
 
 [tool.coverage.run]
-source = ["mixed_methods"]
+source = ["mix_descriptors"]
 
 [tool.coverage.report]
 ignore_errors = true
@@ -127,9 +131,9 @@ warn_redundant_casts = true
 warn_unused_ignores = false  # compatibility
 
 [tool.changelogging]
-name = "mixed-methods"
+name = "mix-descriptors"
 version = "1.0.0"
-url = "https://github.com/nekitdev/mixed-methods"
+url = "https://github.com/nekitdev/mix-descriptors"
 directory = "changes"
 output = "CHANGELOG.md"
 
