@@ -44,7 +44,7 @@ Or by directly specifying it in the configuration like so:
 
 ```toml
 [tool.poetry.dependencies]
-mixed-methods = "^1.0.1"
+mixed-methods = "^1.0.2"
 ```
 
 Alternatively, you can add it directly from the source:

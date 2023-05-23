@@ -1,7 +1,7 @@
-from typing import Callable, Generic, Optional, Type, TypeVar, Union, final, overload
+from typing import Callable, Generic, Optional, Type, TypeVar, Union, overload
 
 from attrs import frozen
-from typing_extensions import Concatenate, ParamSpec
+from typing_extensions import Concatenate, ParamSpec, final
 
 __all__ = ("MixedMethod", "mixed_method")
 

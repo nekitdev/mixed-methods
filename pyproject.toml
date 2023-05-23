@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mixed-methods"
-version = "1.0.1"
+version = "1.0.2"
 description = "Mixed methods."
 authors = ["nekitdev"]
 license = "MIT"
@@ -136,7 +136,7 @@ warn_unused_ignores = false  # compatibility
 
 [tool.changelogging]
 name = "mixed-methods"
-version = "1.0.1"
+version = "1.0.2"
 url = "https://github.com/nekitdev/mixed-methods"
 directory = "changes"
 output = "CHANGELOG.md"
