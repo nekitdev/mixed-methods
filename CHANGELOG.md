@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.1.0 (2024-02-17)
+
+### Internal
+
+- Dropped Python 3.7 support.
+
 ## 1.0.2 (2023-05-24)
 
 ### Fixes

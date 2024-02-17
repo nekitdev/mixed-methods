@@ -14,7 +14,7 @@
 
 ## Installing
 
-**Python 3.7 or above is required.**
+**Python 3.8 or above is required.**
 
 ### pip
 
@@ -44,7 +44,7 @@ Or by directly specifying it in the configuration like so:
 
 ```toml
 [tool.poetry.dependencies]
-mixed-methods = "^1.0.2"
+mixed-methods = "^1.1.0"
 ```
 
 Alternatively, you can add it directly from the source:
