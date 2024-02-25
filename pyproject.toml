@@ -22,7 +22,7 @@ classifiers = [
 ]
 
 [tool.poetry.urls]
-Discord = "https://nekit.dev/discord"
+Chat = "https://nekit.dev/chat"
 Funding = "https://nekit.dev/funding"
 Issues = "https://github.com/nekitdev/mixed-methods/issues"
 

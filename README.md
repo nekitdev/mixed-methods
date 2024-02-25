@@ -109,7 +109,7 @@ If you are interested in contributing to `mixed-methods`, make sure to take a lo
 
 [Email]: mailto:support@nekit.dev
 
-[Discord]: https://nekit.dev/discord
+[Discord]: https://nekit.dev/chat
 
 [Actions]: https://github.com/nekitdev/mixed-methods/actions
 
@@ -124,7 +124,7 @@ If you are interested in contributing to `mixed-methods`, make sure to take a lo
 [Coverage]: https://codecov.io/gh/nekitdev/mixed-methods
 [Documentation]: https://nekitdev.github.io/mixed-methods
 
-[Discord Badge]: https://img.shields.io/badge/chat-discord-5865f2
+[Discord Badge]: https://img.shields.io/discord/728012506899021874
 [License Badge]: https://img.shields.io/pypi/l/mixed-methods
 [Version Badge]: https://img.shields.io/pypi/v/mixed-methods
 [Downloads Badge]: https://img.shields.io/pypi/dm/mixed-methods
